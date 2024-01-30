@@ -1,8 +1,22 @@
 {
   "name": "probro",
   "private": true,
-  "version": "0.0.0",
+  "version": "2024.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshit2608/probro.git"
+  },
+  "keywords": [
+    "probro",
+    "project browser"
+  ],
+  "author": "Harshit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshit2608/probro/issues"
+  },
+  "homepage": "https://github.com/harshit2608/probro.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,6 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "devicons-react": "^1.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -35,5 +50,8 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
