@@ -1,9 +1,13 @@
-import Navbar from "@/scenes/Navbar"
+import Navbar from "@/scenes/Navbar";
+import Home from "@/scenes/Home";
+import OurClasses from "@/scenes/OurClasses";
+import Benefits from "@/scenes/Benefits";
+import ContactUs from "@/scenes/ContactUs";
+import Footer from "@/scenes/Footer";
 import { useEffect, useState } from "react";
-import { SelectedPage } from "./shared/types";
-import Home from "./scenes/Home";
+import { SelectedPage } from "@/shared/types";
 
-const App = () => {
+function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
@@ -29,8 +33,12 @@ const App = () => {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App;
